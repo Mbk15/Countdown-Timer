@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./img/bisc.jpg');
+    min-height: 100vh;
+    background-position: center center;
+    margin:0;
+    font-family: sans-serif;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+h1{
+    font-size: 5rem;
+    font-weight: lighter;
+    font-family:monotype corsiva;
+    text-align: center;
+}
+.countdown-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+.big-text{
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 2rem;
+    font-weight: bold;
+    color: blueviolet;
+}
+.count-el{
+    text-align: center;
+}
+.count-el span{
+    font-size:1.5rem;
+    line-height: 6rem;
+    font-family: cursive;
+    font-weight: bold;
+}
+@media(max-width:520px){
+    .count-el span{
+
+        line-height: 0.8rem;
+    }
+
+}
