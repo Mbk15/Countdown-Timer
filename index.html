@@ -8,8 +8,14 @@
         <script src="script.js" defer></script>
     </head>
     <body>
-        <h1>Eidul-Adha Mubarak</h1>
+      
+        <video autoplay muted loop id="myVideo">
+            <source src="img/Ramadan.mp4" type="video/mp4">
+        </video>
         <div class="countdown-container">
+            <span>
+            <h1 class="myStyle">RAMADAN KAREEM</h1>
+                </span>
             <div class="count-el days-c">
                 <p class="big-text" id="days">0</p>
                 <span>days</span>
@@ -30,6 +36,10 @@
                 <span>seconds</span>
             </div>
 
+            <button id="myBtn" onclick="myFunction()">
+                Pause
+            </button>
         </div>
+    
     </body>
 </html>

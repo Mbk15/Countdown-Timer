@@ -2,29 +2,32 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url('./img/bisc.jpg');
     min-height: 100vh;
     background-position: center center;
     margin:0;
     font-family: sans-serif;
-    background-size: cover;
     display:flex;
     flex-direction: column;
     align-items: center;
-
-    
 }
 h1{
     font-size: 5rem;
     font-weight: lighter;
     font-family:monotype corsiva;
     text-align: center;
+   margin: 0 auto ; 
+   
 }
 .countdown-container{
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 
    
 }
@@ -43,6 +46,36 @@ h1{
     line-height: 6rem;
     font-family: cursive;
     font-weight: bold;
+}
+
+#myVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height:100%;
+}
+#myBtn{
+    width:200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color:#fff;
+    cursor: pointer;
+}
+#myBtn:hover{
+    background: #ddd;
+    color: black;
+}
+.myStyle{
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRq6AB6te0hpKmeyAHXqqksY_JNongme5344A');
+    font-size: 20px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:rgba(0,0,0,.2);
+    text-align: center;
+    top:0;
 }
 @media(max-width:520px){
     .count-el span{
